@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello Gun</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gun/examples/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/sea.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/lib/webrtc.js"></script>
+    <script>
+      const gun = Gun("http://localhost:8765/gun");
+      gun.get("seigo").on(data => console.log(data));
+      gun.get("seigo").once(data => console.log(data));
+    </script>
+  </body>
+</html>

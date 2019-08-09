@@ -1,0 +1,11 @@
+{
+  "name": "playing-with-gun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Seigo/playing-with-gun.git",
+  "author": "Guilherme Seigo Osawa <guilhermeosawa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gun": "^0.2019.726"
+  }
+}
